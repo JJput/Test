@@ -1,0 +1,37 @@
+git config 
+
+//添加仓库
+git inint
+
+//添加到暂存区
+git add xx
+
+//提交当前暂存区的更新至本地仓库
+git commit
+
+//全部
+git commit -a
+
+//-m "" 加上备注信息
+git commit -m ""
+
+//查看状态
+git status
+
+//查看日志
+git log
+
+//添加远程仓库
+git remote add origin https://github.com/iOSZZW/myGit
+
+//将远程仓库拉取下来
+git pull --rebase origin master
+
+//将本地仓库更新的内容提交到远程仓库
+git push -u origin master
+
+//移除
+git rm
+
+//版本还原
+git reset --hard HEAD^
