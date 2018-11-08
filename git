@@ -1,0 +1,12 @@
+git config 
+
+//添加仓库
+git inint
+
+//提交当前暂存区的更新
+git commit
+//将当前本地库全部更新至暂存区并提交更新
+git commit -a
+
+//移除
+git rm
