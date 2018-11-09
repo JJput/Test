@@ -24,17 +24,27 @@ git log
 //添加远程仓库
 git remote add origin https://github.com/iOSZZW/myGit
 
-//将远程仓库拉取下来
-git pull --rebase origin master
-
-//将本地仓库更新的内容提交到远程仓库
-git push -u origin master
-
 //移除
 git rm
 
 //版本还原至上一个版本
 git reset --hard HEAD
 
-//根据SHA1码来指定还原(只需要输入前几个就好)
+//根据SHA1码来指定还原(至少输入前4位)
 git reset --hard xxxx
+
+//撤销对工作区"git.txt"的修改
+git checkout -- git.txt
+
+
+/*********GutHub*********/
+//添加远程仓库
+git remote add origin git@github.com:GitHub用户名/远程库名.git
+
+//将本地仓库更新的内容提交到远程仓库
+git push -u origin master
+git push origin master
+
+//将远程仓库拉取下来
+git pull --rebase origin master
+
