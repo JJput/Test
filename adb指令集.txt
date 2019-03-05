@@ -34,6 +34,12 @@ adb shell dumpsys window windows
 adb shell screencap -p /sdcard/screen.png
 
 
+//卸载
+//查看包名
+adb shell pm list packages 
+adb uninstall packagename
+
+
 minSdkVersion 15
 targetSdkVersion 28
 4.4

@@ -1,3 +1,10 @@
+  <TextView
+        android:background="@color/colorTheme"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_height="match_parent"
+        android:text="me"/>
 git config 
 
 //添加仓库
@@ -21,9 +28,6 @@ git status
 //查看日志
 git log
 
-//添加远程仓库
-git remote add origin https://github.com/iOSZZW/myGit
-
 //移除
 git rm
 
@@ -43,6 +47,9 @@ git checkout -- git.txt
 //添加远程仓库
 git remote add origin git@github.com:GitHub用户名/远程库名.git
 
+//修改远程仓库地址
+git remote set-url origin 
+
 //将本地仓库更新的内容提交到远程仓库
 //第一次 要加 "-u"
 git push -u origin master  
@@ -51,8 +58,15 @@ git push origin master
 
 //将远程仓库拉取下来
 git pull --rebase origin master
+//拉取并合并
+git pull origin master
+
+//拉取并覆盖本地
+git fetch --all && git reset --hard origin/master && git pull
 
 
+将远程仓库强制回退当前版本
+git push -f git@gitee.com:Mr17/P60Q-1-InkReader.git master
 
 echo "# JJUtils" >> README.md
 git init
