@@ -4,6 +4,7 @@
 
 
 将主页主体分为五块。分别对应后录2.1至2.3。详情见后录。
+
 ![1](https://i.loli.net/2019/04/10/5caddf710200b.png)
 
 
@@ -62,10 +63,10 @@ data实际内容对应后录每章的响应体
 
 响应体:
 
-|   | url  | title | 
-| :-: | :-: | :-: |
-| 类型 | String | String  | 
-| 说明 | 网页地址  | 标题 |
+|   | url  | title | img |
+| :-: | :-: | :-: | :-: |
+| 类型 | String | String | String |
+| 说明 | 网页地址  | 标题 | 若存在>=1图片则附上第一张图片url,若无就用null |
 
 示例:
 
@@ -76,11 +77,13 @@ data实际内容对应后录每章的响应体
     "data": [
         {
             "url": "xxxxx",
-            "title": "标题1"
+            "title": "标题1",
+            "img":"xxx/1.png"
         },
         {
             "url": "xxxxx",
-            "title": "标题2"
+            "title": "标题2",
+            "img":"xxx/1.png
         }
     ],
     "msg": null
