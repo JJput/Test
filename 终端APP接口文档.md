@@ -63,10 +63,10 @@ data实际内容对应后录每章的响应体
 
 响应体:
 
-|   | url  | title | img |
-| :-: | :-: | :-: | :-: |
-| 类型 | String | String | String |
-| 说明 | 网页地址  | 标题 | 若存在>=1图片则附上第一张图片url,若无就用null |
+|   | url  | title | time | img |
+| :-: | :-: | :-: | :-: | :-: |
+| 类型 | String | String | String | String |
+| 说明 | 网页地址  | 标题 | 发布时间 | 若存在>=1图片则附上第一张图片url,若无就用null |
 
 示例:
 
@@ -78,12 +78,14 @@ data实际内容对应后录每章的响应体
         {
             "url": "xxxxx",
             "title": "标题1",
+            "time":"2018年10月2日",
             "img":"xxx/1.png"
         },
         {
             "url": "xxxxx",
             "title": "标题2",
-            "img":"xxx/1.png
+            "time":"2018年10月2日",
+            "img":"xxx/1.png"
         }
     ],
     "msg": null
