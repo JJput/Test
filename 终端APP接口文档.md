@@ -14,10 +14,10 @@
 所有接口返回数据都按以下格式为基础。
 data实际内容对应后录每章的响应体
 
-|   | state  | code | data | msg |
-| :-: | :-: | :-: | :-: | :-: |
-| 类型 | String | int  | array | String |
-| 说明 | 成功/失败  | 1/0 | \ | “请求参数不合法” |
+|  | RESULTCODE | DATA | MSG |
+|  :-:  | :-: | :-: | :-: | :-: |
+| 类型 | int  | array | String |
+| 说明 | 0成功 | \ | 错误信息 |
 
 
 #### 2.1 横滚轮播图片
@@ -37,9 +37,9 @@ data实际内容对应后录每章的响应体
 
 ```
 {
-    "state": "成功",
-    "code": 1,
-    "data": [
+    "RESULTCODE": 0,
+    "MSG": "",
+    "DATA":  [
         {
             "url": "xxx/1.png",
             "title": "标题1"
@@ -49,7 +49,6 @@ data实际内容对应后录每章的响应体
             "title": "标题2"
         }
     ],
-    "msg": null
 }
 ```
 
@@ -72,9 +71,9 @@ data实际内容对应后录每章的响应体
 
 ```
 {
-    "state": "成功",
-    "code": 1,
-    "data": [
+    "RESULTCODE": 0,
+    "MSG": "",
+    "DATA": [
         {
             "url": "xxxxx",
             "title": "标题1",
@@ -88,7 +87,6 @@ data实际内容对应后录每章的响应体
             "img":"xxx/1.png"
         }
     ],
-    "msg": null
 }
 ```
 
@@ -117,9 +115,9 @@ data实际内容对应后录每章的响应体
 
 ```
 {
-    "state": "成功",
-    "code": 1,
-    "data": [
+    "RESULTCODE": 0,
+    "MSG": "",
+    "DATA":  [
         {
             "url": "xxx/封面图片.png",
             "title": "标题1",
@@ -136,7 +134,6 @@ data实际内容对应后录每章的响应体
             "title": "标题2"
         }
     ],
-    "msg": null
 }
 ```
 
